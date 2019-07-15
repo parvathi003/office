@@ -1,0 +1,107 @@
+<form >
+        <div>
+                <input (click)="addUser()"type="button"value="submit">
+                
+                <input type="reset"value="Cancle">
+                
+                </div>
+   <br>
+<div class="form-group">
+    <label for="OfficeName">Office Name</label>
+    <input required [(ngModel)]="clobj.OfficeName" id="OfficeName"type="text"class="form-control"placeholder="OfficeName"class="form-control"[ngModelOptions]="{standalone: true}">
+<br></div><br> <div style="color: red">
+        {{errormsg0}}</div>
+    
+        <div class="form-group">   
+    <label for="AddressLine1">Address Line 1</label>
+    <input required [(ngModel)]="clobj.AddressLine1" id="AddressLine1"type="text"class="form-control"placeholder="AddressLine1"class="form-control"[ngModelOptions]="{standalone: true}">
+        
+    
+<label for="AddressLine2">Address Line 2</label>
+<input required [(ngModel)]="clobj.AddressLine2" id="AddressLine2"type="text"class="form-control"placeholder="AddressLine2"class="form-control"[ngModelOptions]="{standalone: true}">
+        </div>
+        <div style="color: red">
+                {{errormsg1}}{{errormsg2}}</div><br>
+<div class="form-group">
+<label for="City">City</label>
+<input required [(ngModel)]="clobj.City" id="City"type="text"class="form-control"placeholder="City"class="form-control"[ngModelOptions]="{standalone: true}">
+
+
+<label for="State">State</label>
+<input required [(ngModel)]="clobj.State" id="State"type="text"class="form-control"placeholder="State"class="form-control"[ngModelOptions]="{standalone: true}">
+
+
+<label for="Zip">Zip</label>
+<input required [(ngModel)]="clobj.Zip" id="Zip"type="text"class="form-control"placeholder="Zip"class="form-control"[ngModelOptions]="{standalone: true}">
+</div><br><br>
+<div style="color: red">
+        {{errormsg3}}  {{errormsg4}}  {{errormsg5}}</div>
+
+<div class="form-group">
+<label for="Phone">Phone</label>
+<input required [(ngModel)]="clobj.Phone"    id="Phone"type="text"class="form-control"placeholder="Phone"class="form-control"[ngModelOptions]="{standalone: true}">
+
+<label for="Fax">Fax</label>
+<input required [(ngModel)]="clobj.Fax" id="Fax"type="text"class="form-control"placeholder="Fax"class="form-control"[ngModelOptions]="{standalone: true}">
+
+
+<label for="Email">Email</label>
+<input required [(ngModel)]="clobj.Email"  id="Email"type="text"class="form-control"placeholder="Email"class="form-control"[ngModelOptions]="{standalone: true}">
+</div><br>
+<div style="color: red">
+        {{errormsg6}}{{errormsg7}}  {{errormsg8}}</div>
+
+
+<div class="form-group">
+<label for="Contact">Contact</label>
+<input required [(ngModel)]="clobj.Contact" id="Contact"type="text"class="form-control"placeholder="Contact"class="form-control"[ngModelOptions]="{standalone: true}"><br><br>
+</div>
+<div style="color: red">
+        {{errormsg9}}</div><br>
+<div style="color:black">ID Codes (No Punctuation)</div><br>
+
+<div class="form-group">
+<label for="National Provider ID">National Provider ID</label>
+<input required [(ngModel)]="clobj.NationalProviderID" id="NationalProviderID"type="text"class="form-control"placeholder="NationalProviderID"class="form-control"[ngModelOptions]="{standalone: true}">
+
+<label for="EmplyerTaxID">Emplyer Tax ID</label>
+<input required [(ngModel)]="clobj.EmplyerTaxID" id="EmplyerTaxID"type="text"class="form-control"placeholder="EmplyerTaxID"class="form-control"[ngModelOptions]="{standalone: true}"><br><br>
+</div>
+<div style="color: red">
+        {{errormsga}}{{errormsgb}}</div>
+<div style="color:green">Required for OASIS Submission</div><br>
+
+<div class="form-group">
+<label for="AgencyMedicareID">Agency Medicare ID</label>
+<input required [(ngModel)]="clobj.AgencyMedicareID" id="AgencyMedicareID"type="text"class="form-control"placeholder="AgencyMedicareID"class="form-control"[ngModelOptions]="{standalone: true}">
+
+<label for="AgencyMedicaidID">Agency Medicaid ID</label>
+<input required [(ngModel)]="clobj.AgencyMedicaidID" id="AgencyMedicaidID"type="text"class="form-control"placeholder="AgencyMedicaidID"class="form-control"[ngModelOptions]="{standalone: true}"><br><br>
+</div>
+<div style="color: red">
+        {{errormsgc}}{{errormsgd}}</div>
+
+<div class="form-group">
+<label for="BranchID">Branch ID</label>
+<input required [(ngModel)]="clobj.BranchID" id="BranchID"type="text"class="form-control"placeholder="BranchID"class="form-control"[ngModelOptions]="{standalone: true}">
+
+<label for="StateAssignedAgencyID">State Assigned Agency ID</label>
+<input required [(ngModel)]="clobj.StateAssignedAgencyID" id="StateAssignedAgencyID"type="text"class="form-control"placeholder="StateAssignedAgencyID"class="form-control"[ngModelOptions]="{standalone: true}"><br><br>
+</div><br>
+<div style="color: red">
+        {{errormsge}}{{errormsgf}}</div>
+<div style="color:blue">Enter 'N' if no branches. 'P' for parent HHA with branches of the Branch ID for a branch</div><br>
+
+<div class="form-group">
+<label for="AgencymeetsMedicareQualitySubmissionRequirement">Agency meets Medicare Quality Submission Requirement</label>
+<input required [(ngModel)]="clobj.AgencymeetsMedicareQualitySubmissionRequirement" id="AgencymeetsMedicareQualitySubmissionRequirement"type="checkbox"class="form-control"placeholder="AgencymeetsMedicareQualitySubmissionRequirement"class="form-control"[ngModelOptions]="{standalone: true}"><br><br>
+</div>
+<div style="color: red">
+        {{errormsgg}}</div>
+<div>
+<input (click)="addUser()"type="button"value="submit">
+
+<input type="reset"value="Cancle">
+
+</div><br>
+</form>
